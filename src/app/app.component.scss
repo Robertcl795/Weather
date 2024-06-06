@@ -1,0 +1,35 @@
+#container {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  > .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+  }
+
+  .main--title {
+    $img-size: 7rem;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 1rem;
+    margin: 2rem;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    > img {
+      width: $img-size;
+      height: $img-size;
+    }
+    > h1 {
+      font-size: 6rem;
+      margin: 0;
+    }
+  }
+}
